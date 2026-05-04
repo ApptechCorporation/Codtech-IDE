@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/surface"
+        android:elevation="4dp"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/text_primary" />
+
+    <!-- Main Content Area with Horizontal Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- File Explorer Sidebar -->
+        <FrameLayout
+            android:id="@+id/file_explorer_container"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@color/surface_variant"
+            android:layout_marginEnd="1dp" />
+
+        <!-- Editor and Preview Area -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Tab Layout for Editor/Preview -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/editor_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/surface"
+                app:tabTextColor="@color/text_secondary"
+                app:tabSelectedTextColor="@color/text_primary"
+                app:tabIndicatorColor="@color/primary" />
+
+            <!-- Editor ViewPager -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/editor_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Console/Output Area -->
+    <FrameLayout
+        android:id="@+id/console_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/console_background"
+        android:layout_marginTop="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android IDE Light</string>
+    <string name="menu_new_project">Novo Projeto</string>
+    <string name="menu_open_project">Abrir Projeto</string>
+    <string name="menu_save">Salvar</string>
+    <string name="menu_compile">Compilar</string>
+    <string name="menu_run">Executar</string>
+    <string name="editor_tab_code">Código</string>
+    <string name="editor_tab_layout">Layout</string>
+    <string name="console_title">Console</string>
+    <string name="file_explorer_title">Arquivos</string>
+    <string name="compile_success">Compilação bem-sucedida!</string>
+    <string name="compile_error">Erro na compilação</string>
+    <string name="project_created">Projeto criado com sucesso</string>
+</resources>

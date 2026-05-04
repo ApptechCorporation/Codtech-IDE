@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="secondary">#03DAC6</color>
+    <color name="secondary_dark">#018786</color>
+    
+    <!-- Error & Status -->
+    <color name="error">#CF6679</color>
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    
+    <!-- Background & Surface (Dark Theme) -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="surface_variant">#2C2C2C</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_tertiary">#808080</color>
+    
+    <!-- Editor Colors -->
+    <color name="editor_background">#1E1E1E</color>
+    <color name="editor_text">#E0E0E0</color>
+    <color name="editor_keyword">#569CD6</color>
+    <color name="editor_string">#CE9178</color>
+    <color name="editor_comment">#6A9955</color>
+    <color name="editor_number">#B5CEA8</color>
+    <color name="editor_line_number">#858585</color>
+    
+    <!-- Console Colors -->
+    <color name="console_background">#0D0D0D</color>
+    <color name="console_text">#00FF00</color>
+    <color name="console_error">#FF6B6B</color>
+    <color name="console_warning">#FFD93D</color>
+</resources>
