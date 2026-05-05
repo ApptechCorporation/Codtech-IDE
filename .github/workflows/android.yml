@@ -11,28 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
     - uses: actions/checkout@v4
 
     - name: Set up JDK 17
       uses: actions/setup-java@v4
-=======
-    - uses: actions/checkout@v6
-
-    - name: Set up JDK 17
-      uses: actions/setup-java@v5
->>>>>>> cb98df41f1386a64ff6eb477382d2b389e80afad
       with:
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
 
     - name: Cache Gradle packages
-<<<<<<< HEAD
       uses: actions/cache@v4
-=======
-      uses: actions/cache@v5
->>>>>>> cb98df41f1386a64ff6eb477382d2b389e80afad
       with:
         path: |
           ~/.gradle/caches
@@ -43,19 +32,12 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-      
+
     - name: Build APK with Gradle
       run: ./gradlew assembleDebug
 
     - name: Upload APK artifact
-<<<<<<< HEAD
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
         path: app/build/outputs/apk/debug/app-debug.apk
-=======
-      uses: actions/upload-artifact@v7
-      with:
-        name: app-debug
-        path: app/build/outputs/apk/debug/app-debug.apk
->>>>>>> cb98df41f1386a64ff6eb477382d2b389e80afad
