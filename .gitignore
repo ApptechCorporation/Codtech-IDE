@@ -46,4 +46,7 @@ app.*.map.json
 # Android Studio will place build artifacts here
 /app/debug
 /app/release
+<<<<<<< HEAD
 build_log.txt
+=======
+>>>>>>> cb98df41f1386a64ff6eb477382d2b389e80afad
